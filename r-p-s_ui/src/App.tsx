@@ -49,7 +49,7 @@ function App() {
     }catch(error:any){
       console.error("Error: ",error)
       if(error.response){
-        setError("Error: "+error.response.data.detail)
+        setError(error.response.data.detail)
       }else{
       setError("Error: Choice not selected")
       }
